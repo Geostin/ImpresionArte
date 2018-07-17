@@ -1,0 +1,114 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "navbar.scss";
+@import "masthead.scss";
+@import "services.scss";
+@import "portfolio.scss";
+@import "timeline.scss";
+@import "team.scss";
+@import "contact.scss";
+@import "footer.scss";
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.btn-primary{
+    background-color:#448AFF;
+    border-color: #448AFF; 
+}
+/*=====Barra de navegacion=====*/
+#mainNav.navbar-shrink{
+    background: #b4b4b4;
+}
+#mainNav .navbar-toggler{
+    font-size: 1rem;
+    background-color:#448AFF; 
+}
+.navbar-brand {
+    background: rgba(rgb(180, 180, 180), 0.8);
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover{
+    color: #448AFF;
+}
+#mainNav .navbar-toggler{
+    background: #797979;
+
+}
+
+/*=====Seccion INICIO=====*/
+header.masthead{
+    height: 100vh;
+
+}
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-color: #2a57a7 !important;
+    border-color: #2a57a7 !important;
+}
+/*=====Seccion SERVICIOS=====*/
+.text-primary {
+    color: #448AFF !important;
+}
+/*=====Seccion PRODUCTOS=====*/
+#portfolio .portfolio-item .portfolio-link .portfolio-hover{
+    background: rgba(42, 87, 167, 0.8);
+}
+/*=====Seccion ACERCA DE=====*/
+.empresas{
+    filter: none;
+}
+.empresas:hover{
+    filter: grayscale(100%);
+}
+/*=====SECCION FOOTER=====*/
+.copyright, .text-left{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+ul.social-buttons li a{
+    background: #448AFF;
+}
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover{
+    background: #2a57a7;
+}
+.abajo{
+    display: flex;
+    align-items: flex-end;
+}
+
+/*=========Medias querys========*/
+@media (max-width: 768px){
+    .intro-text{
+        margin-top: 40px;
+    }
+
+}
+@media (max-width: 576px){
+    .telefono{
+        font-size: 1rem;
+    }
+    .copyright, .text-left{
+        font-size: 0.9rem
+    }
+
+}
+@media (max-width: 992px){
+    #mainNav{
+        background: #b4b4b4;;
+    }
+    .telefono{
+        margin: auto;
+    }
+    .navbar-brand{
+        margin: auto;
+    }
+    #mainNav .navbar-toggler {
+        margin: auto;
+    }
+}
